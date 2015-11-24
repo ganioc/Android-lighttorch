@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.boxshell.lesson.lighttorch.MainActivityStatic">
+
+    <include layout="@layout/appbar_transparent" />
+
+
+
+    <ImageView
+        android:id="@+id/imageStatic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/static_night"
+        android:adjustViewBounds="true"
+        />
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lightFab"
+        android:layout_below="@id/imageStatic"
+        android:src="@drawable/ic_circle"
+        android:layout_marginRight="48dp"
+        android:layout_marginTop="-24dp"
+        android:layout_alignParentRight="true"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryDark"
+        android:layout_below="@id/imageStatic"
+        />
+
+</RelativeLayout>
